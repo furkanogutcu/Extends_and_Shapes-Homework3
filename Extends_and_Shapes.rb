@@ -260,11 +260,11 @@ def createAShape
         "Exit --> EXIT/exit"
     
     case (prompt "\nŞEKLİ GİRİNİZ: ").downcase  #This method object returns --> x = createAShape
-    when "square"     then Square.createObject(Square.getInfo)
+    when "square"   then Square.createObject(Square.getInfo)
     when "circle"   then Circle.createObject(Circle.getInfo)
-    when "cube"      then Cube.createObject(Cube.getInfo)
-    when "sphere"     then Sphere.createObject(Sphere.getInfo)
-    when "exit"    then exit
+    when "cube"     then Cube.createObject(Cube.getInfo)
+    when "sphere"   then Sphere.createObject(Sphere.getInfo)
+    when "exit"     then exit
     else
         abort "Unidentified shape entered!"
     end
